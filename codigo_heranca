@@ -1,19 +1,43 @@
 import java.util.Date;
 public class Pessoa {
-	public String nome;
-	public String cpf;
-	public Date data_nascimento;
+	private String nome;
+	private String cpf;
+	private Date data_nascimento;	
 
 	public Pessoa(String _nome, String _cpf, Date _data) {
 		this.nome = _nome;
 		this.cpf = _cpf;
+		this.data_nascimento = _data;			
+	}
+	
+	public String getNome(){
+		return this.nome;
+	}
+	
+	public String getCpf(){
+		return this.cpf;
+	}
+	public Date getDataNascimento(){
+		return this.data_nascimento;
+	}
+	
+	public void setNome(String _nome) {
+		this.nome = _nome;
+	}
+	
+	public void setCpf(String _cpf){
+		this.cpf = _cpf;
+	}
+	
+	public void setDataNascimento(Date _data) {
 		this.data_nascimento = _data;
 	}
+	
 }
 
 public class Aluno extends Pessoa {
 
-	public String matricula;
+	private String matricula;
 	
 	public Aluno(String _nome, String _cpf, Date _data, Int _matricula ) {
 		super(_nome, _cpf, _data);
