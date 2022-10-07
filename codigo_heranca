@@ -37,12 +37,18 @@ public class Pessoa {
 
 public class Aluno extends Pessoa {
 
-	private String matricula;
+	private Int matricula;
 	
 	public Aluno(String _nome, String _cpf, Date _data, Int _matricula ) {
 		super(_nome, _cpf, _data);
 		
 		this.matricula = _matricula;
 	}
+	public Int getMatricula(){
+		return this.matricula;
+	}
 	
+	public void setmatricula(Int _matricula){
+		this.matricula = _matricula;
+	}
 }
