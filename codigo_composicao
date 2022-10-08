@@ -5,12 +5,8 @@ public class Endereco{
     private Int    numero;
     
     private Endereco(String rua, String bairro, Int numero){
-        this.rua = rua;
-        this.cep = cep;
-        this.complemento = complemento;
+        this.rua    = rua;
         this.bairro = bairro;
-        this.cidade = cidade;
-        this.estado = estado;
         this.numero = numero;
     }   
      public String getRua() {
@@ -32,8 +28,6 @@ public class Endereco{
        	 this.numero = numero;
      }    
 }
-
-
 
 public class funcionario {
 
